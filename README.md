@@ -9,14 +9,14 @@ A simple utility to validate JSON strings or objects. Checks for:
 ## Installation
 
 ```bash
-npm install json-validator-tool
+npm install a-valid-json
 ```
 
 ## Usage
 
 ```js
 
-const JsonValidator = require('json-validator-tool');
+const JsonValidator = require('a-valid-json');
 
 const validator1 = new JsonValidator('{"foo":"bar"}');
 console.log(validator1.valid()); // true
