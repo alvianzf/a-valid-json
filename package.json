@@ -1,6 +1,6 @@
 {
   "name": "a-valid-json",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a json validator",
   "main": "index.js",
   "scripts": {
