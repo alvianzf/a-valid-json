@@ -1,0 +1,24 @@
+{
+  "name": "a-valid-json",
+  "version": "1.0.0",
+  "description": "a json validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvianzf/a-valid-json.git"
+  },
+  "keywords": [
+    "json",
+    "validator",
+    "json"
+  ],
+  "author": "alvianzf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvianzf/a-valid-json/issues"
+  },
+  "homepage": "https://github.com/alvianzf/a-valid-json#readme"
+}
