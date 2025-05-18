@@ -27,8 +27,8 @@ console.log(validator.reason(''));               // 'Empty string'
 
 ## API
 
-`.valid()`
+`.valid(input)`
 * Returns `true` if valid, otherwise `false`.
 
-`.reason()`
+`.reason(input)`
 * Returns a string describing the validation result.
