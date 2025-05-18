@@ -26,8 +26,6 @@ console.log(validator.reason(''));               // 'Empty string'
 ```
 
 ## API
-`new JsonValidator(input)`
-* `input:` JSON string or object
 
 `.valid()`
 * Returns `true` if valid, otherwise `false`.
