@@ -15,16 +15,14 @@ npm install a-valid-json
 ## Usage
 
 ```js
+const validator = require('a-valid-json');
 
-const JsonValidator = require('a-valid-json');
+console.log(validator.valid('{"foo":"bar"}'));  // true
+console.log(validator.reason('{"foo":"bar"}')); // 'Valid JSON'
 
-const validator1 = new JsonValidator('{"foo":"bar"}');
-console.log(validator1.valid()); // true
-console.log(validator1.reason()); // 'Valid JSON'
+console.log(validator.valid(''));                // false
+console.log(validator.reason(''));               // 'Empty string'
 
-const validator2 = new JsonValidator('');
-console.log(validator2.valid()); // false
-console.log(validator2.reason()); // 'Empty string'
 ```
 
 ## API

@@ -1,22 +1,19 @@
 class JsonValidator {
-    constructor(input) {
-      this.input = input;
-      this.result = this._validate();
-    }
+    constructor() {}
   
-    _validate() {
+    validate(input) {
       let obj;
   
-      if (typeof this.input === 'string') {
-        if (this.input.trim() === '') return { valid: false, reason: 'Empty string' };
+      if (typeof input === 'string') {
+        if (input.trim() === '') return { valid: false, reason: 'Empty string' };
   
         try {
-          obj = JSON.parse(this.input);
+          obj = JSON.parse(input);
         } catch {
           return { valid: false, reason: 'Invalid JSON string' };
         }
-      } else if (typeof this.input === 'object' && this.input !== null) {
-        obj = this.input;
+      } else if (typeof input === 'object' && input !== null) {
+        obj = input;
       } else {
         return { valid: false, reason: 'Not a JSON object or string' };
       }
@@ -31,12 +28,14 @@ class JsonValidator {
       return { valid: true, reason: 'Valid JSON' };
     }
   
-    valid() {
-      return this.result.valid;
+    valid(input) {
+      return this.validate(input).valid;
     }
   
-    reason() {
-      return this.result.reason;
+    reason(input) {
+      return this.validate(input).reason;
     }
   }
+  
+  module.exports = new JsonValidator();
   
